@@ -32,10 +32,10 @@ export const data2 = [
 
 ];
 
-export const allCountries=[
+export const allCountries:[string, (string | number)][]=[
     ['Country', "Popularity"],
     ['Afghanistan',1],	 //	AF
-    ['Åland Islands',2],	 //	AX
+    ['Aland Islands',2],	 //	AX
     ['Albania',3],	 //	AL
     ['Algeria',4],	 //	DZ
     ['American Samoa',5],	 //	AS
@@ -61,17 +61,17 @@ export const allCountries=[
     ['Bermuda',25],	 //	BM
     ['Bhutan',26],	 //	BT
     ['Bolivia',27],	 //	BO
-    ['Bonaire, Sint Eustatius and Saba',28],	 //	BQ
+
     ['Bosnia and Herzegovina',29],	 //	BA
     ['Botswana',30],	 //	BW
     ['Bouvet Island',31],	 //	BV
     ['Brazil',32],	 //	BR
     ['British Indian Ocean Territory',33],	 //	IO
-    ['Brunei Darussalam',34],	 //	BN
+    ['Brunei',34],	 //	BN
     ['Bulgaria',35],	 //	BG
     ['Burkina Faso',36],	 //	BF
     ['Burundi',37],	 //	BI
-    ['Cabo Verde',38],	 //	CV
+    ['Cape Verde',38],	 //	CV
     ['Cambodia',39],	 //	KH
     ['Cameroon',40],	 //	CM
     ['Canada',41],	 //	CA
@@ -81,19 +81,19 @@ export const allCountries=[
     ['Chile',45],	 //	CL
     ['China',46],	 //	CN
     ['Christmas Island',47],	 //	CX
-    ['Cocos (Keeling) Islands',48],	 //	CC
+    ['Cocos Islands',48],	 //	CC
     ['Colombia',49],	 //	CO
     ['Comoros',50],	 //	KM
     ['CG',51],	 //	CG
     ['CD',52],	 //	CD
     ['Cook Islands',53],	 //	CK
     ['Costa Rica',54],	 //	CR
-    ['CI',55],	 //	CI
+    ['Ivory Coast',55],	 //	CI
     ['Croatia',56],	 //	HR
     ['Cuba',57],	 //	CU
-    ['Curaçao',58],	 //	CW
+
     ['Cyprus',59],	 //	CY
-    ['CZ',60],	 //	CZ
+    ['Czech Republic',60],	 //	CZ
     ['Denmark',61],	 //	DK
     ['Djibouti',62],	 //	DJ
     ['Dominica',63],	 //	DM
@@ -131,7 +131,7 @@ export const allCountries=[
     ['Guyana',95],	 //	GY
     ['Haiti',96],	 //	HT
     ['Heard Island and McDonald Islands',97],	 //	HM
-    ['Holy See',98],	 //	VA
+    ['Vatican',98],	 //	VA
     ['Honduras',99],	 //	HN
     ['Hong Kong',100],	 //	HK
     ['Hungary',101],	 //	HU
@@ -151,8 +151,8 @@ export const allCountries=[
     ['Kazakhstan',114],	 //	KZ
     ['Kenya',115],	 //	KE
     ['Kiribati',116],	 //	KI
-    ['KP',117],	 //	KP
-    ['KR',118],	 //	KR
+    ['North Korea',117],	 //	KP
+    ['South Korea',118],	 //	KR
     ['Kuwait',119],	 //	KW
 
     ['Kyrgyzstan',120],	 //	KG
@@ -204,7 +204,7 @@ export const allCountries=[
     ['Oman',164],	 //	OM
     ['Pakistan',165],	 //	PK
     ['Palau',166],	 //	PW
-    ['PS',167],	 //	PS
+    ['Palestinian Territory',167],	 //	PS
     ['Panama',168],	 //	PA
     ['Papua New Guinea',169],	 //	PG
     ['Paraguay',170],	 //	PY
@@ -217,13 +217,13 @@ export const allCountries=[
     ['Qatar',177],	 //	QA
     ['Reunion',178],	 //	RE
     ['Romania',179],	 //	RO
-    ['RU',180],	 //	RU
+    ['Russia', 180],
     ['Rwanda',181],	 //	RW
-    ['Saint Barthélemy',182],	 //	BL
-    ['Saint Helena, Ascension and Tristan da Cunha',183],	 //	SH
+
+    ['Saint Helena',183],
     ['Saint Kitts and Nevis',184],	 //	KN
     ['Saint Lucia',185],	 //	LC
-    ['Saint Martin (French part)',186],	 //	MF
+
     ['Saint Pierre and Miquelon',187],	 //	PM
     ['Saint Vincent and the Grenadines',188],	 //	VC
     ['Samoa',189],	 //	WS
@@ -235,7 +235,7 @@ export const allCountries=[
     ['Seychelles',195],	 //	SC
     ['Sierra Leone',196],	 //	SL
     ['Singapore',197],	 //	SG
-    ['Sint Maarten (Dutch part)',198],	 //	SX
+
     ['Slovakia',199],	 //	SK
     ['Slovenia',200],	 //	SI
     ['Solomon Islands',201],	 //	SB
@@ -256,7 +256,7 @@ export const allCountries=[
     ['Tajikistan',216],	 //	TJ
     ['Tanzania',217],	 //	TZ
     ['Thailand',218],	 //	TH
-    ['TL',219],	 //	TL
+    ['East Timor',219],	 //	TL
     ['Togo',220],	 //	TG
     ['Tokelau',221],	 //	TK
     ['Tonga',222],	 //	TO
@@ -269,7 +269,7 @@ export const allCountries=[
     ['Uganda',229],	 //	UG
     ['Ukraine',230],	 //	UA
     ['United Arab Emirates',231],	 //	AE
-    ['GB',232],	 //	GB
+    ['United Kingdom',232],	 //	GB
     ['United States',233],	 //	US
     ['United States Minor Outlying Islands',234],	 //	UM
     ['Uruguay',235],	 //	UY
@@ -277,8 +277,7 @@ export const allCountries=[
     ['Vanuatu',237],	 //	VU
     ['Venezuela',238],	 //	VE
     ['VietNam',239],	 //	VN
-    ['Virgin Islands (British)',240],	 //	VG
-    ['Virgin Islands (U.S.)',241],	 //	VI
+
     ['Wallis and Futuna',242],	 //	WF
     ['Western Sahara',243],	 //	EH
     ['Yemen',244],	 //	YE
